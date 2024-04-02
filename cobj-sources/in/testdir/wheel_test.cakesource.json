@@ -1,0 +1,12 @@
+{
+  "display_name": "Test display name",
+  "using_model_sources": [
+    {
+      "type": "obj",
+      "material_map": {
+        "polisher_wheel": "technomancy:block/polisher/polisher_wheel",
+        "polisher_wood": "technomancy:block/polisher/polisher_wood"
+      }
+    }
+  ]
+}
