@@ -1,4 +1,4 @@
-package com.cake.cmodels.core.model;
+package com.cake.cmodels.core.types;
 
 public class GenericVec3 {
     float x, y, z;

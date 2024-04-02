@@ -1,4 +1,4 @@
-package com.cake.cmodels.core.model;
+package com.cake.cmodels.core.types;
 
 /**
  * Generic Vec2 type (independent of mc) <br/>
