@@ -10,11 +10,24 @@ public class ResourceLocationLike {
         this.path = path;
     }
     
+    public static ResourceLocationLike fromString(String resourceLocation) {
+        int splitCharIndex = resourceLocation.indexOf(":");
+        if (splitCharIndex == -1) return null;
+        String namespace = resourceLocation.substring(0, splitCharIndex);
+        String path = resourceLocation.substring(splitCharIndex);
+        return new ResourceLocationLike(namespace, path);
+    }
+    
+    @Override
+    public String toString() {
+        return this.namespace + ":" + this.path;
+    }
+    
     public String getNamespace() {
         return namespace;
     }
-    public ResourceLocationLike(String path) {
-        this.path = path;
+    public String getPath() {
+        return path;
     }
     
 }
