@@ -36,7 +36,7 @@ public class GenerateButton extends Component {
 
     public GenerateButton(Runnable onClick) {
         addMouseListener(new ButtonMouseListener(onClick));
-        setPreferredSize(new Dimension(480, 224));
+        setPreferredSize(new Dimension(480, 250));
     }
 
     @Override

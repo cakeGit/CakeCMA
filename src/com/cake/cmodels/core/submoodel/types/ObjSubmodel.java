@@ -7,6 +7,7 @@ import com.cake.cmodels.core.submoodel.Submodel;
 import java.util.ArrayList;
 import java.util.List;
 
+/**Core submodel type, since the compiled types are essentially obj submodels*/
 public class ObjSubmodel implements Submodel {
 
     List<Face> faces = new ArrayList<>();
