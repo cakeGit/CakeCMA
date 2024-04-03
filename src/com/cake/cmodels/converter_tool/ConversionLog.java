@@ -1,9 +1,11 @@
 package com.cake.cmodels.converter_tool;
 
+import com.cake.cmodels.converter_tool.source.exception.SourceCompileError;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConverterLog {
+public class ConversionLog {
 
     public static boolean isConvertingLogEnabled = false;
     public static List<String> LOG = new ArrayList<>();
@@ -14,9 +16,16 @@ public class ConverterLog {
         else
             LOG.add(msg);
     }
-
+    
+    public static void log(SourceCompileError e) {
+        LOG.add("Error in generation:");
+        LOG.add(e.getMessage());
+        LOG.add(e.getRecommendation());
+    }
+    
+    
     public static void clear() {
         LOG = new ArrayList<>();
     }
-
+    
 }

@@ -1,9 +1,12 @@
 package com.cake.cmodels.converter_tool;
 
-import com.cake.cmodels.converter_tool.reading.MisreadSource;
-import com.cake.cmodels.converter_tool.reading.ConversionSource;
-import com.cake.cmodels.converter_tool.reading.SourcesReader;
+import com.cake.cmodels.converter_tool.source.MisreadSource;
+import com.cake.cmodels.converter_tool.source.ConversionSource;
+import com.cake.cmodels.converter_tool.source.SourcesReader;
+import com.cake.cmodels.converter_tool.source.exception.SourceCompileError;
 import com.cake.cmodels.converter_tool.user_interface.ConverterInterface;
+import com.cake.cmodels.converter_tool.user_interface.component.SourceSelect;
+import com.cake.cmodels.core.model.Face;
 
 import java.util.*;
 
@@ -37,6 +40,20 @@ public class CmodelConverter {
 
     public static void beginConversion() {
     
+        List<ConversionSource> sourcesToConvert = ConverterInterface.SOURCE_SELECTS
+            .stream().filter(SourceSelect::isSelected).map(SourceSelect::getSource).toList();
+        
+        for (ConversionSource source : sourcesToConvert) {
+            ConversionLog.log("Converting source " + source.getDisplayName());
+    
+            try {
+                List<Face> geometry = source.compileGeometry();
+                
+            } catch (SourceCompileError e) {
+                ConversionLog.log(e);
+            }
+        }
+        
     }
 
 }
