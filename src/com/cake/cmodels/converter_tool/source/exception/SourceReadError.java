@@ -1,4 +1,4 @@
-package com.cake.cmodels.converter_tool.reading.exception;
+package com.cake.cmodels.converter_tool.source.exception;
 
 public class SourceReadError extends Exception {
     

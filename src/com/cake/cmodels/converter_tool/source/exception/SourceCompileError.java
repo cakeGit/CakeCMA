@@ -1,10 +1,10 @@
-package com.cake.cmodels.converter_tool.reading.exception;
+package com.cake.cmodels.converter_tool.source.exception;
 
-public class SourceProcessingError extends Exception {
+public class SourceCompileError extends Exception {
     
     String recommendation;
     
-    public SourceProcessingError(String message, String recommendation) {
+    public SourceCompileError(String message, String recommendation) {
         super(message);
         this.recommendation = recommendation;
     }

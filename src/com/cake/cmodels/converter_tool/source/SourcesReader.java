@@ -1,7 +1,7 @@
-package com.cake.cmodels.converter_tool.reading;
+package com.cake.cmodels.converter_tool.source;
 
 import com.cake.cmodels.converter_tool.CmodelConverter;
-import com.cake.cmodels.converter_tool.reading.exception.SourceReadError;
+import com.cake.cmodels.converter_tool.source.exception.SourceReadError;
 import com.cake.cmodels.core.CmodelFileExtensions;
 import org.json.JSONArray;
 import org.json.JSONException;
