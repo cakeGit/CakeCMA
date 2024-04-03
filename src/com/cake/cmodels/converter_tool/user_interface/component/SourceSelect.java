@@ -1,6 +1,6 @@
 package com.cake.cmodels.converter_tool.user_interface.component;
 
-import com.cake.cmodels.converter_tool.reading.ConversionSource;
+import com.cake.cmodels.converter_tool.source.ConversionSource;
 import com.cake.cmodels.core.CmodelFileExtensions;
 
 import javax.swing.*;
@@ -8,7 +8,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.File;
 
 public class SourceSelect extends JPanel {
     
@@ -39,7 +38,13 @@ public class SourceSelect extends JPanel {
         g.translate(-10, -10);
 
     }
-
+    
+    public ConversionSource getSource() {
+        return source;
+    }
+    public boolean isSelected() {
+        return isSelected;
+    }
     protected class ToggleSelectMouseListener implements MouseListener {
 
         @Override

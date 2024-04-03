@@ -1,6 +1,6 @@
 package com.cake.cmodels.converter_tool.user_interface.component;
 
-import com.cake.cmodels.converter_tool.ConverterLog;
+import com.cake.cmodels.converter_tool.ConversionLog;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -25,7 +25,7 @@ public class ConverterLogDisplay extends Component {
         BorderFactory.createBevelBorder(BevelBorder.LOWERED).paintBorder(this, g, 0, 0, getWidth()-1, getHeight()-1);
         
         int lineHeight = 15;
-        int totalLineCount = ConverterLog.LOG.size();
+        int totalLineCount = ConversionLog.LOG.size();
         
         int renderedLinesCount = (int) Math.ceil(getHeight() / (double) lineHeight);
         int renderedLinesStartIndex = scrollY == -1 ?
@@ -38,13 +38,13 @@ public class ConverterLogDisplay extends Component {
         g.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, lineHeight -2));
         
         for (int i = renderedLinesStartIndex; i <= renderedLinesStartIndex + renderedLinesCount; i++) {
-            if (i >= ConverterLog.LOG.size())
+            if (i >= ConversionLog.LOG.size())
                 return;
             
             int currentLineY = i * lineHeight;
             
             g.drawString(
-                ConverterLog.LOG.get(i), 0,
+                ConversionLog.LOG.get(i), 0,
                 scrollY == -1 ?
                     currentLineY - (renderedLinesStartIndex * lineHeight)
                     : currentLineY - scrollY

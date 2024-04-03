@@ -1,8 +1,8 @@
 package com.cake.cmodels.converter_tool.user_interface;
 
-import com.cake.cmodels.converter_tool.reading.ConversionSource;
+import com.cake.cmodels.converter_tool.source.ConversionSource;
 import com.cake.cmodels.converter_tool.CmodelConverter;
-import com.cake.cmodels.converter_tool.reading.MisreadSource;
+import com.cake.cmodels.converter_tool.source.MisreadSource;
 import com.cake.cmodels.converter_tool.user_interface.component.*;
 import com.cake.cmodels.converter_tool.user_interface.layout.CellResponsiveStrategy;
 import com.cake.cmodels.converter_tool.user_interface.layout.PanelWithFloatingLayout;
