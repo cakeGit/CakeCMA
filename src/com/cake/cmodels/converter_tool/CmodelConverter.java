@@ -1,18 +1,20 @@
 package com.cake.cmodels.converter_tool;
 
+import com.cake.cmodels.converter_tool.reading.MisreadSource;
+import com.cake.cmodels.converter_tool.reading.exception.SourceReadError;
+import com.cake.cmodels.converter_tool.reading.ConversionSource;
+import com.cake.cmodels.converter_tool.reading.SourcesReader;
 import com.cake.cmodels.converter_tool.user_interface.ConverterInterface;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 
 public class CmodelConverter {
 
     public static boolean RUNNING = true;
-    public static Map<String, ConversionSource> SOURCES_MAP = new HashMap<>();
-    public static List<String> SOURCES_ORDERED = List.of();
+    
+    public static List<ConversionSource> AVAILABLE_SOURCES = new ArrayList<>();
+    public static List<MisreadSource> MISREAD_SOURCES = new ArrayList<>();
+    
     public static String SOURCES_PATH = "unknown";
 
     private static final Timer tickTimer = new Timer();

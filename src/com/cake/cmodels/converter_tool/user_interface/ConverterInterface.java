@@ -1,18 +1,14 @@
 package com.cake.cmodels.converter_tool.user_interface;
 
-import com.cake.cmodels.converter_tool.ConversionSource;
+import com.cake.cmodels.converter_tool.reading.ConversionSource;
 import com.cake.cmodels.converter_tool.CmodelConverter;
-import com.cake.cmodels.converter_tool.user_interface.component.FloatingFolderInfoLink;
-import com.cake.cmodels.converter_tool.user_interface.component.GenerateButton;
-import com.cake.cmodels.converter_tool.user_interface.component.MissingSourcesLabel;
-import com.cake.cmodels.converter_tool.user_interface.component.SelectedSourcesLabel;
-import com.cake.cmodels.converter_tool.user_interface.component.SourceSelect;
+import com.cake.cmodels.converter_tool.reading.MisreadSource;
+import com.cake.cmodels.converter_tool.user_interface.component.*;
 import com.cake.cmodels.converter_tool.user_interface.layout.FixedMarginLayout;
 import com.cake.cmodels.converter_tool.user_interface.layout.ListLayout;
 
 import javax.swing.*;
 
-import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
@@ -62,20 +58,16 @@ public class ConverterInterface {
 
     private static void buildSourceSelectSection() {
 
-        if (CmodelConverter.SOURCES_ORDERED.size() == 0) {
+        if (CmodelConverter.AVAILABLE_SOURCES.size() == 0 && CmodelConverter.MISREAD_SOURCES.size() == 0) {
             ScreenComponents.sourceSelectPanel.add(new MissingSourcesLabel());
         } else {
-            ScreenComponents.sourceSelectPanel.add(new Label("Available sources:"));
-            for (String group : CmodelConverter.SOURCES_ORDERED) {
-                ConversionSource source = CmodelConverter.SOURCES_MAP.get(group);
-
-                SourceSelect sourceSelect = new SourceSelect(
-                    group,
-                    source.isComplete(),
-                    source.getAvailabilityMessage()
-                );
+            for (ConversionSource source : CmodelConverter.AVAILABLE_SOURCES) {
+                SourceSelect sourceSelect = new SourceSelect(source);
                 SOURCE_SELECTS.add(sourceSelect);
                 ScreenComponents.sourceSelectPanel.add(sourceSelect);
+            }
+            for (MisreadSource source : CmodelConverter.MISREAD_SOURCES) {
+                ScreenComponents.sourceSelectPanel.add(new MisreadSourceDisplay(source));
             }
         }
 

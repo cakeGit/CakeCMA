@@ -1,5 +1,7 @@
 package com.cake.cmodels.converter_tool.user_interface.component;
 
+import com.cake.cmodels.converter_tool.CmodelConverter;
+
 import javax.imageio.ImageIO;
 
 import java.awt.*;
@@ -8,16 +10,16 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class GenerateButton extends Component {
 
     protected static BufferedImage readAsset(String filename) {
-        String workingDir = System.getProperty("user.dir");
-        String filePath = workingDir + File.separator + ".." + File.separator + "assets" + File.separator + filename;
+        ClassLoader classLoader = GenerateButton.class.getClassLoader();
         try {
-            return ImageIO.read(new File(filePath));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            return ImageIO.read(Objects.requireNonNull(classLoader.getResourceAsStream(filename)));
+        } catch (IOException | NullPointerException e) {
+            throw new RuntimeException("Unable to read inner asset", e);
         }
     }
 
