@@ -4,7 +4,6 @@ import com.cake.cmodels.converter_tool.reading.MisreadSource;
 import com.cake.cmodels.core.CmodelFileExtensions;
 
 import java.awt.*;
-import java.io.File;
 
 public class MisreadSourceDisplay extends Component {
     

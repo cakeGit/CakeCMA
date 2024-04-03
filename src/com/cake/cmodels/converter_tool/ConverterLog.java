@@ -8,7 +8,7 @@ public class ConverterLog {
     public static boolean isConvertingLogEnabled = false;
     public static List<String> LOG = new ArrayList<>();
 
-    public static void putToLog(String msg) {
+    public static void log(String msg) {
         if (isConvertingLogEnabled)
             new RuntimeException("Called putToLog but the converter is not currently converting, something broken ig").printStackTrace();
         else

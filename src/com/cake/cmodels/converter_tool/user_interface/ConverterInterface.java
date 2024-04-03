@@ -5,6 +5,7 @@ import com.cake.cmodels.converter_tool.CmodelConverter;
 import com.cake.cmodels.converter_tool.reading.MisreadSource;
 import com.cake.cmodels.converter_tool.user_interface.component.*;
 import com.cake.cmodels.converter_tool.user_interface.layout.CellResponsiveStrategy;
+import com.cake.cmodels.converter_tool.user_interface.layout.PanelWithFloatingLayout;
 import com.cake.cmodels.converter_tool.user_interface.layout.ListLayout;
 import com.cake.cmodels.converter_tool.user_interface.layout.ResponsiveGridLayout;
 
@@ -25,6 +26,7 @@ public class ConverterInterface {
 
         public static JPanel sourceSelectPanel = new JPanel();
         public static JScrollPane sourceSelectScrollPane;
+        public static JPanel mainPanel = new JPanel();
 
     }
 
@@ -65,23 +67,25 @@ public class ConverterInterface {
             )
         );
     
-        frame.setLayout(gridLayout);
-        frame.add(ScreenComponents.sourceSelectScrollPane);
-
-        String ethicacyMessage = "Sources responsibly and ethically fetched from ";
-//        frame.add(new FloatingFolderInfoLink(
-//            ethicacyMessage + "📁" + CmodelConverter.SOURCES_PATH,
-//            ethicacyMessage + "📂" + CmodelConverter.SOURCES_PATH,
-//            CmodelConverter.SOURCES_PATH));
-
-        //frame.add(new SelectedSourcesLabel());
-        frame.add(new GenerateButton(
+        ScreenComponents.mainPanel.setLayout(gridLayout);
+        
+        ScreenComponents.mainPanel.add(ScreenComponents.sourceSelectScrollPane);
+        //ScreenComponents.mainPanel.add(new SelectedSourcesLabel());
+        ScreenComponents.mainPanel.add(new GenerateButton(
             () -> {
                 System.out.println("Generated");
                 JOptionPane.showMessageDialog(null, "Generated", "Success!", JOptionPane.INFORMATION_MESSAGE);
             }
         ));
-        frame.add(new ConverterLogDisplay());
+        ScreenComponents.mainPanel.add(new ConverterLogDisplay());
+    
+        String ethicacyMessage = "Sources responsibly and ethically fetched from ";
+        frame.add(new FloatingFolderInfoLink(
+            ethicacyMessage + "📁" + CmodelConverter.SOURCES_PATH,
+            ethicacyMessage + "📂" + CmodelConverter.SOURCES_PATH,
+            CmodelConverter.SOURCES_PATH));
+        frame.add(ScreenComponents.mainPanel);
+        frame.setLayout(new PanelWithFloatingLayout(new Point(), new Dimension(0, 30)));
 
         frame.setVisible(true);
         frame.setResizable(true);
@@ -115,7 +119,7 @@ public class ConverterInterface {
 
         @Override
         public void windowClosing(WindowEvent e) {
-            CmodelConverter.RUNNING = false;
+            CmodelConverter.IS_CONVERTING = false;
         }
 
         @Override

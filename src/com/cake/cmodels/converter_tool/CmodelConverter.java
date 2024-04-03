@@ -1,7 +1,6 @@
 package com.cake.cmodels.converter_tool;
 
 import com.cake.cmodels.converter_tool.reading.MisreadSource;
-import com.cake.cmodels.converter_tool.reading.exception.SourceReadError;
 import com.cake.cmodels.converter_tool.reading.ConversionSource;
 import com.cake.cmodels.converter_tool.reading.SourcesReader;
 import com.cake.cmodels.converter_tool.user_interface.ConverterInterface;
@@ -11,6 +10,7 @@ import java.util.*;
 public class CmodelConverter {
 
     public static boolean RUNNING = true;
+    public static boolean IS_CONVERTING = true;
     
     public static List<ConversionSource> AVAILABLE_SOURCES = new ArrayList<>();
     public static List<MisreadSource> MISREAD_SOURCES = new ArrayList<>();

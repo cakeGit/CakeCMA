@@ -27,8 +27,6 @@ public class GenerateButton extends Component {
     static final BufferedImage BUTTON_HOVER_IMAGE = readAsset("generate-button-hover.png");
     static final BufferedImage BUTTON_PRESSED_IMAGE = readAsset("generate-button-pressed.png");
 
-    /**Ensure the user cant call generate while generating*/
-    boolean isEnabled = true;
     boolean isPressed = false;
     boolean isHovered = false;
 
@@ -42,7 +40,7 @@ public class GenerateButton extends Component {
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        if (isPressed || !isEnabled)
+        if (isPressed || !CmodelConverter.IS_CONVERTING)
             g.drawImage(BUTTON_PRESSED_IMAGE, imagePadding, 0, null);
         else if (isHovered)
             g.drawImage(BUTTON_HOVER_IMAGE, imagePadding, 0, null);
@@ -59,9 +57,10 @@ public class GenerateButton extends Component {
 
         @Override
         public void mouseClicked(MouseEvent e) {
-            if (isEnabled) {
+            if (CmodelConverter.IS_CONVERTING) {
+                CmodelConverter.IS_CONVERTING = false;
                 onClick.run();
-                isEnabled = false;
+                CmodelConverter.IS_CONVERTING = true;
             }
         }
         @Override

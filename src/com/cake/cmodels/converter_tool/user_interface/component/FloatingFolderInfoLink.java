@@ -1,12 +1,14 @@
 package com.cake.cmodels.converter_tool.user_interface.component;
 
+import com.cake.cmodels.converter_tool.user_interface.layout.FloatingComponent;
+
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
 
-public class FloatingFolderInfoLink extends Component {
+public class FloatingFolderInfoLink extends Component implements FloatingComponent {
 
     String content, hoverContent, clickPath;
     boolean hoverState = false;
@@ -29,10 +31,11 @@ public class FloatingFolderInfoLink extends Component {
         g.drawString(drawnText, 0, 18);
     }
 
-    public Point getPreferredLocation(Component parent) {
-        return new Point(0, parent.getHeight() - 30);
+    @Override
+    public Point getDesiredLocation(Component parent) {
+        return new Point(10, parent.getHeight() - 30);
     }
-
+    
     private class FileLinkMouseListener implements MouseListener {
         @Override
         public void mouseClicked(MouseEvent e) {

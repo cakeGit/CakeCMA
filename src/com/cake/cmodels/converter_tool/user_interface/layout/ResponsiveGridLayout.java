@@ -1,6 +1,8 @@
 package com.cake.cmodels.converter_tool.user_interface.layout;
 
 
+import com.cake.cmodels.converter_tool.user_interface.component.FloatingFolderInfoLink;
+
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -26,6 +28,7 @@ public class ResponsiveGridLayout implements LayoutManager {
     
     @Override
     public void layoutContainer(Container parent) {
+        Component[] layoutComponents = parent.getComponents();
         int columnCount = gridResponsiveStrategies.get(0).size();
         
         Dimension size = parent.getSize();
@@ -46,7 +49,7 @@ public class ResponsiveGridLayout implements LayoutManager {
         //Also put together a row - column list for later
         List<List<Component>> gridComponents = new ArrayList<>();
         
-        for (Component component : parent.getComponents()) {
+        for (Component component : layoutComponents) {
             
             CellResponsiveStrategy responsiveStrategy = getCellResponsiveStrategy(rowIndex, columnIndex);
             if (gridComponents.size() <= columnIndex.get())
@@ -96,7 +99,7 @@ public class ResponsiveGridLayout implements LayoutManager {
         rowIndex.set(0);
         columnIndex.set(0);
         
-        for (Component component : parent.getComponents()) {
+        for (Component component : layoutComponents) {
             CellResponsiveStrategy responsiveStrategy = getCellResponsiveStrategy(rowIndex, columnIndex);
             
             //Skip to next cell if this is merged, since merged cells don't have a corresponding component
@@ -131,7 +134,7 @@ public class ResponsiveGridLayout implements LayoutManager {
         rowIndex.set(0);
         columnIndex.set(0);
         
-        for (Component component : parent.getComponents()) {
+        for (Component component : layoutComponents) {
             Double currentHeightPosition = heightPositions.get(columnIndex.get());
             
             CellResponsiveStrategy responsiveStrategy = getCellResponsiveStrategy(rowIndex, columnIndex);
