@@ -1,5 +1,4 @@
 {
-  "display_name": "Test display name",
   "model_sources": [
     {
       "type": "cmodel:obj",
