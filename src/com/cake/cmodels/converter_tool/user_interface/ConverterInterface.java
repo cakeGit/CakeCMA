@@ -4,11 +4,14 @@ import com.cake.cmodels.converter_tool.reading.ConversionSource;
 import com.cake.cmodels.converter_tool.CmodelConverter;
 import com.cake.cmodels.converter_tool.reading.MisreadSource;
 import com.cake.cmodels.converter_tool.user_interface.component.*;
-import com.cake.cmodels.converter_tool.user_interface.layout.FixedMarginLayout;
+import com.cake.cmodels.converter_tool.user_interface.layout.CellResponsiveStrategy;
 import com.cake.cmodels.converter_tool.user_interface.layout.ListLayout;
+import com.cake.cmodels.converter_tool.user_interface.layout.ResponsiveGridLayout;
 
 import javax.swing.*;
+import javax.swing.border.BevelBorder;
 
+import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
@@ -34,26 +37,54 @@ public class ConverterInterface {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         buildSourceSelectSection();
-
-        frame.setLayout(new FixedMarginLayout(frame.getSize(), ScreenComponents.sourceSelectScrollPane, frame.getSize().height - 70));
-
+    
+        ResponsiveGridLayout gridLayout = new ResponsiveGridLayout(new Dimension(1000, 600));
+    
+        gridLayout.addRowStrategy(
+            List.of(
+                new CellResponsiveStrategy.Scaled(
+                    CellResponsiveStrategy.ScalingStrategy.SET_SIZE,
+                    CellResponsiveStrategy.ScalingStrategy.WEIGHT,
+                    500, 1
+                ),
+                new CellResponsiveStrategy.Scaled(
+                    CellResponsiveStrategy.ScalingStrategy.WEIGHT,
+                    CellResponsiveStrategy.ScalingStrategy.SET_SIZE,
+                    1, 250
+                )
+            )
+        );
+        gridLayout.addRowStrategy(
+            List.of(
+                new CellResponsiveStrategy.MergeAbove(),
+                new CellResponsiveStrategy.Scaled(
+                    CellResponsiveStrategy.ScalingStrategy.WEIGHT,
+                    CellResponsiveStrategy.ScalingStrategy.WEIGHT,
+                    1, 1
+                )
+            )
+        );
+    
+        frame.setLayout(gridLayout);
         frame.add(ScreenComponents.sourceSelectScrollPane);
 
         String ethicacyMessage = "Sources responsibly and ethically fetched from ";
-        frame.add(new FloatingFolderInfoLink(
-            ethicacyMessage + "📁" + CmodelConverter.SOURCES_PATH,
-            ethicacyMessage + "📂" + CmodelConverter.SOURCES_PATH,
-            CmodelConverter.SOURCES_PATH));
+//        frame.add(new FloatingFolderInfoLink(
+//            ethicacyMessage + "📁" + CmodelConverter.SOURCES_PATH,
+//            ethicacyMessage + "📂" + CmodelConverter.SOURCES_PATH,
+//            CmodelConverter.SOURCES_PATH));
 
-        frame.add(new SelectedSourcesLabel());
+        //frame.add(new SelectedSourcesLabel());
         frame.add(new GenerateButton(
             () -> {
                 System.out.println("Generated");
                 JOptionPane.showMessageDialog(null, "Generated", "Success!", JOptionPane.INFORMATION_MESSAGE);
             }
         ));
+        frame.add(new ConverterLogDisplay());
 
         frame.setVisible(true);
+        frame.setResizable(true);
     }
 
     private static void buildSourceSelectSection() {
@@ -70,10 +101,12 @@ public class ConverterInterface {
                 ScreenComponents.sourceSelectPanel.add(new MisreadSourceDisplay(source));
             }
         }
-
+        
         ScreenComponents.sourceSelectPanel.setLayout(new ListLayout());
 
         ScreenComponents.sourceSelectScrollPane = new JScrollPane(ScreenComponents.sourceSelectPanel);
+        ScreenComponents.sourceSelectScrollPane.setBorder(BorderFactory.createBevelBorder(BevelBorder.LOWERED));
+        ScreenComponents.sourceSelectScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         ScreenComponents.sourceSelectScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 
     }
