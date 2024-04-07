@@ -50,7 +50,7 @@ public class CmodelConverter {
                 List<Face> geometry = source.compileGeometry();
                 
             } catch (SourceCompileError e) {
-                ConversionLog.log(e);
+                ConversionLog.error(e);
             }
         }
         
