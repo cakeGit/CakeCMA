@@ -8,12 +8,12 @@ public class Face {
 
     List<FaceVertex> vertices;
     VertexNormal vertexNormal;
-    ResourceLocationLike texture;
+    String material;
     
-    public Face(List<FaceVertex> vertices, VertexNormal vertexNormal, ResourceLocationLike texture) {
+    public Face(List<FaceVertex> vertices, VertexNormal vertexNormal, String material) {
         this.vertices = vertices;
         this.vertexNormal = vertexNormal;
-        this.texture = texture;
+        this.material = material;
     }
     
     public void setVertices(List<FaceVertex> vertices) {
@@ -22,15 +22,15 @@ public class Face {
     public void setVertexNormal(VertexNormal vertexNormal) {
         this.vertexNormal = vertexNormal;
     }
-    public void setTexture(ResourceLocationLike texture) {
-        this.texture = texture;
+    public void setMaterial(String material) {
+        this.material = material;
     }
     
     public List<FaceVertex> getVertices() {
         return vertices;
     }
-    public ResourceLocationLike getTexture() {
-        return texture;
+    public String getMaterial() {
+        return material;
     }
     public VertexNormal getVertexNormal() {
         return vertexNormal;
