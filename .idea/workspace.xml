@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4402b21b-4783-4a2c-a1b1-172f5b252793" name="Changes" comment="✨⚙️ Convert to gradle project">
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.5.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CakeModel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/CmodelConverter$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/CmodelConverter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/ConversionLog$EntryCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/ConversionLog$LogEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/ConversionLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/ModelSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/SubmodelParsers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/ConversionSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/MisreadSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/SourcesReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/Submodel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/SubmodelReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/exception/SourceCompileError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/exception/SourceReadError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/readers/ObjModelReader$FaceReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/readers/ObjModelReader$FaceVertexReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/readers/ObjModelReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/source/readers/SafeFieldAccessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/ConverterInterface$CloseListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/ConverterInterface$ScreenComponents.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/ConverterInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/ConverterLogDisplay$LogScrollingMouseHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/ConverterLogDisplay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/FloatingFolderInfoLink$FileLinkMouseListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/FloatingFolderInfoLink.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton$ButtonMouseListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/MisreadSourceDisplay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/MissingSourcesLabel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/SelectedSourcesLabel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/SourceSelect$ToggleSelectMouseListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/SourceSelect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/CellResponsiveStrategy$MergeAbove.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/CellResponsiveStrategy$Scaled.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/CellResponsiveStrategy$ScalingStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/CellResponsiveStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/FloatingComponent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/ListLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/PanelWithFloatingLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/layout/ResponsiveGridLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/CakeModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/CmodelFileExtensions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/Geometry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/model/Face.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/model/FaceVertex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/model/Vertex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/model/VertexNormal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/model/VertexUV.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/types/GenericVec2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/types/GenericVec3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/types/ResourceLocationLike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generate-button-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generate-button-pressed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generate-button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobjConverterTool/com/cake/cmodels/converter_tool/CmodelConverter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobjConverterTool/com/cake/cmodels/converter_tool/CmodelConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobjConverterTool/com/cake/cmodels/converter_tool/ModelSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobjConverterTool/com/cake/cmodels/core/model/Face.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CobjConverterTool/com/cake/cmodels/core/model/FaceVertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/CmodelConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/CmodelConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/ConversionLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/ConversionLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/ModelSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/ModelSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/SubmodelParsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/SubmodelParsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/ConversionSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/ConversionSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/MisreadSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/MisreadSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/SourcesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/SourcesReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/Submodel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/Submodel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/SubmodelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/SubmodelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/exception/SourceCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/exception/SourceCompileError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/exception/SourceReadError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/exception/SourceReadError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/readers/ObjModelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/readers/ObjModelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/source/readers/SafeFieldAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/readers/SafeFieldAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/ConverterInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/ConverterInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/component/ConverterLogDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/ConverterLogDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/component/FloatingFolderInfoLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/FloatingFolderInfoLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/component/MisreadSourceDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/MisreadSourceDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/component/MissingSourcesLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/MissingSourcesLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/component/SelectedSourcesLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/SelectedSourcesLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/component/SourceSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/SourceSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/layout/CellResponsiveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/CellResponsiveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/layout/FloatingComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/FloatingComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/layout/ListLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/ListLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/layout/PanelWithFloatingLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/PanelWithFloatingLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/converter_tool/user_interface/layout/ResponsiveGridLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/ResponsiveGridLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/CakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/CakeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/CmodelFileExtensions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/CmodelFileExtensions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/model/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/Face.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/model/FaceVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/FaceVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/model/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/model/VertexNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/VertexNormal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/model/VertexUV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/VertexUV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/types/GenericVec2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/types/GenericVec2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/types/GenericVec3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/types/GenericVec3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cake/cmodels/core/types/ResourceLocationLike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/types/ResourceLocationLike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/generate-button-hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/generate-button-hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/generate-button-pressed.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/generate-button-pressed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/generate-button.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/generate-button.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CakeModel" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CakeModel" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a29e247a-3443-4118-8aed-039483b9e1f6" />
+        <option name="url" value="https://github.com/cakeGit/CakeModel.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2eVj7HWNyF9dGEzmxHCGbjWA2bA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "last_opened_file_path": "C:/Onedrive Free Coding/Java Minecraft Modding/Forge/Technomancy-2",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cake.cmodels.core" />
+      <recent name="com.cake.cmodels.converter_tool.user_interface.layout" />
+      <recent name="com.cake.cmodels.core.submoodel.sources" />
+      <recent name="com.cake.cmodels.converter_tool" />
+      <recent name="com.cake.cmodels.core.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Onedrive Free Coding\Java Minecraft Modding\Forge\CakeModel\cobj-sources\in" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Onedrive Free Coding\Java Minecraft Modding\Forge\CakeModel\src\main\java" />
+      <recent name="C:\Onedrive Free Coding\Java Minecraft Modding\Forge\CakeModel\src\main\resources" />
+      <recent name="C:\Onedrive Free Coding\Java Minecraft Modding\Forge\CakeModel\src\main" />
+      <recent name="C:\Onedrive Free Coding\Java Minecraft Modding\Forge\Technomancy-2\CakeObjConverterTool\src\resources" />
+      <recent name="C:\Onedrive Free Coding\Java Minecraft Modding\Forge\Technomancy-2\CakeObjConverterTool\cobj-sources\in\testdir" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="com.cake.cmodels.converter_tool.source.readers" />
+      <recent name="com.cake.cmodels.converter_tool.user_interface.layout" />
+      <recent name="com.cake.cmodels.core.model" />
+      <recent name="com.cake.cobj.converter_tool.exceptions" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cake.cmodels.core.model" />
+      <recent name="com.cake.cobj.converter_tool.ui.component" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="run cake'es h gay  bitch ass   converter shitt ass program" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.cake.cmodels.converter_tool.CmodelConverter" />
+      <module name="CakeModel.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cobj-sources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4402b21b-4783-4a2c-a1b1-172f5b252793" name="Changes" comment="" />
+      <created>1711996470448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711996470448</updated>
+    </task>
+    <task id="LOCAL-00001" summary="✨ Cake's cancellation contingency">
+      <created>1712082177039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082177039</updated>
+    </task>
+    <task id="LOCAL-00002" summary="✨ Log for tracking generation progress, might make a progress bar later">
+      <created>1712082271435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082271435</updated>
+    </task>
+    <task id="LOCAL-00003" summary="♻️ Refactored for clarity">
+      <created>1712082304116</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082304116</updated>
+    </task>
+    <task id="LOCAL-00004" summary="✨ Changed to sourcefile focus for more veratility">
+      <created>1712082335715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082335715</updated>
+    </task>
+    <task id="LOCAL-00005" summary="✨ Log for tracking generation progress, might make a progress bar later">
+      <created>1712082346612</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082346612</updated>
+    </task>
+    <task id="LOCAL-00006" summary="✨ Log for tracking generation progress, might make a progress bar later">
+      <created>1712082366540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082366540</updated>
+    </task>
+    <task id="LOCAL-00007" summary="♻️ Shrimple rename">
+      <created>1712082389455</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082389455</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🗑️ Cheeky commit so i can see diff">
+      <created>1712082548281</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082548281</updated>
+    </task>
+    <task id="LOCAL-00009" summary="✨started sources">
+      <created>1712090151635</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712090151635</updated>
+    </task>
+    <task id="LOCAL-00010" summary="🦐 shrimp is bugs">
+      <created>1712090172456</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712090172456</updated>
+    </task>
+    <task id="LOCAL-00011" summary="✨ Created core components, mainly for reading">
+      <created>1712091316131</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712091316131</updated>
+    </task>
+    <task id="LOCAL-00012" summary="✨ Build files">
+      <created>1712135485951</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712135485951</updated>
+    </task>
+    <task id="LOCAL-00013" summary="📄Added json lib">
+      <created>1712135514707</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712135514707</updated>
+    </task>
+    <task id="LOCAL-00014" summary="🍱 Created new testing assets">
+      <created>1712135628269</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712135628269</updated>
+    </task>
+    <task id="LOCAL-00015" summary="✨Core structure + types">
+      <created>1712135652736</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712135652736</updated>
+    </task>
+    <task id="LOCAL-00016" summary="✨ Redid source reading to make it more versatile as well as error displays">
+      <created>1712135707085</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712135707085</updated>
+    </task>
+    <task id="LOCAL-00017" summary="✨ Refactor display layout, now responsive 🥳">
+      <created>1712170024647</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712170024647</updated>
+    </task>
+    <task id="LOCAL-00018" summary="✨ Refactor display layout, now responsive 🥳">
+      <created>1712170042244</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712170042244</updated>
+    </task>
+    <task id="LOCAL-00019" summary="✨ Fixed up display layout and button disable handling">
+      <created>1712178022595</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712178022595</updated>
+    </task>
+    <task id="LOCAL-00020" summary="♻️Renamed package to better name">
+      <created>1712182593673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712182593673</updated>
+    </task>
+    <task id="LOCAL-00021" summary="✨ UI finalisation 🥳">
+      <created>1712182619183</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712182619183</updated>
+    </task>
+    <task id="LOCAL-00022" summary="✨ Started file reading, its late so gn">
+      <created>1712183183582</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712183183582</updated>
+    </task>
+    <task id="LOCAL-00023" summary="♻️🍱 Refactor some ui elements and refactored button to internal asset">
+      <created>1712528648171</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712528648171</updated>
+    </task>
+    <task id="LOCAL-00024" summary="🐛 Fix gitignore">
+      <created>1712528661938</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1712528661938</updated>
+    </task>
+    <task id="LOCAL-00025" summary="✨Abstracted list of faces for ModelGeometry to allow cubes in future">
+      <created>1712528768274</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712528768274</updated>
+    </task>
+    <task id="LOCAL-00026" summary="✨ Improved logging to allow for type highlighting (not visually implemented yet)">
+      <created>1712528813173</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1712528813173</updated>
+    </task>
+    <task id="LOCAL-00027" summary="🍻 No way i can use this gitmoji. FINALL Y MADE THE READING OF OBJ SOURCE F###">
+      <created>1712531758836</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712531758836</updated>
+    </task>
+    <task id="LOCAL-00028" summary="✨ Material reading">
+      <created>1712603529898</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712603529898</updated>
+    </task>
+    <task id="LOCAL-00029" summary="✨ Timing logs">
+      <created>1712603539528</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712603539528</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="️ Cheeky commit so i can see diff" />
+    <MESSAGE value="✨started sources" />
+    <MESSAGE value=" shrimp is bugs" />
+    <MESSAGE value="✨ Created core components, mainly for reading" />
+    <MESSAGE value="✨ Build files" />
+    <MESSAGE value="Added json lib" />
+    <MESSAGE value=" Created new testing assets" />
+    <MESSAGE value="✨Core structure" />
+    <MESSAGE value="✨Core structure + types" />
+    <MESSAGE value="✨ Redid source reading to make it more versatile as well as error displays" />
+    <MESSAGE value="✨ Refactor display layout, now responsive " />
+    <MESSAGE value="✨ Fixed up display layout and button disable handling" />
+    <MESSAGE value="♻️Renamed package to better name" />
+    <MESSAGE value="✨ UI finalisation " />
+    <MESSAGE value="✨ Started file reading, its late so gn" />
+    <MESSAGE value="✨ Abstracted face to single normal since there is no smooth surface handling" />
+    <MESSAGE value="♻️ Refactor some ui elements and refactored button to internal asset" />
+    <MESSAGE value=" Fix gitignore" />
+    <MESSAGE value="✨Abstracted list of faces for ModelGeometry to allow cubes in future" />
+    <MESSAGE value="✨ Improved logging to allow for type highlighting" />
+    <MESSAGE value="✨ Improved logging to allow for type highlighting (not visually implemented yet)" />
+    <MESSAGE value=" No way i can use this gitmoji. FINALL Y MADE THE READING OF OBJ SOURCE F###" />
+    <MESSAGE value="✨ Material reading" />
+    <MESSAGE value="✨ Timing logs" />
+    <MESSAGE value="✨⚙️ Convert to gradle project" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨⚙️ Convert to gradle project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CakeModel$run_cake_es_h_gay__bitch_ass___converter_shitt_ass_program.ic" NAME="run cake'es h gay  bitch ass   converter shitt ass program Coverage Results" MODIFIED="1712167382288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
