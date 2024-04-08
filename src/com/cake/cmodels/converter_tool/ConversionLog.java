@@ -4,6 +4,7 @@ import com.cake.cmodels.converter_tool.source.exception.SourceCompileError;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ConversionLog {
@@ -11,9 +12,25 @@ public class ConversionLog {
     public static boolean isConvertingLogEnabled = false;
     public static List<LogEntry> LOG = new ArrayList<>();
 
+    protected static HashMap<String, Long> activeTimerStarts = new HashMap<>();
+    
     public static void log(String msg) {
         LOG.add(new LogEntry(EntryCategory.INFO, msg));
     }
+    
+    public static void startTimer(String key, String msg) {
+        activeTimerStarts.put(key, System.currentTimeMillis());
+        log(msg);
+    }
+    
+    public static void endTimer(String key, String msg) {
+        String time = activeTimerStarts.containsKey(key)
+            ? (System.currentTimeMillis() - activeTimerStarts.get(key)) + "ms"
+            : " unknown time";
+        activeTimerStarts.remove(key);
+        log(msg + " in " + time);
+    }
+    
     
     public static void error(SourceCompileError e) {
         LOG.add(new LogEntry(EntryCategory.ERROR, "Error in generation:"));
