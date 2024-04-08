@@ -4,8 +4,9 @@ import com.cake.cmodels.converter_tool.ConversionLog;
 import com.cake.cmodels.converter_tool.source.Submodel;
 import com.cake.cmodels.converter_tool.source.SubmodelReader;
 import com.cake.cmodels.converter_tool.source.exception.SourceCompileError;
-import com.cake.cmodels.core.RawGeometry;
+import com.cake.cmodels.core.Geometry;
 import com.cake.cmodels.core.model.*;
+import com.cake.cmodels.core.types.ResourceLocationLike;
 import org.json.JSONObject;
 
 import java.io.*;
@@ -18,9 +19,23 @@ public class ObjModelReader implements SubmodelReader {
     
     @Override
     public Submodel readSource(JSONObject source, File file) throws SourceCompileError {
+        
+        HashMap<String, ResourceLocationLike> materialMap = new HashMap<>();
+        if (source.has("material_map")) {
+            ConversionLog.log("Using defined material map");
+            for (String material : source.getJSONObject("material_map").keySet()) {
+                materialMap.put(material, ResourceLocationLike.fromString(material));
+            }
+        } else {
+            ConversionLog.log("Material map undefined, is this intentional?");
+        }
+    
+        ConversionLog.startTimer("obj_read", "Reading OBJ source data");
         try (
             BufferedReader fileInputStream = new BufferedReader(new FileReader(file.getAbsoluteFile()));
         ) {
+            ConversionLog.endTimer("obj_read", "Read OBJ source data");
+            
             //Mutable properties to read into
             List<Vertex> vertices = new ArrayList<>();
             List<VertexNormal> vertexNormals = new ArrayList<>();
@@ -28,9 +43,11 @@ public class ObjModelReader implements SubmodelReader {
             HashMap<String, List<FaceReference>> groupedFaceComponents = new HashMap<>();
             AtomicReference<String> currentObject = new AtomicReference<>();
             AtomicReference<String> currentFaceMaterial = new AtomicReference<>();
-            
+    
+            ConversionLog.startTimer("obj_parse", "Parsing OBJ source data");
             for (String line : fileInputStream.lines().toList())
                 readSourceLine(line, vertices, vertexNormals, vertexUVs, groupedFaceComponents, currentObject, currentFaceMaterial);
+            ConversionLog.endTimer("obj_parse", "Parsed OBJ source data");
     
             //Convert the face reference to an actual face
             HashMap<String, List<Face>> readGeometry = new HashMap<>();
@@ -72,7 +89,7 @@ public class ObjModelReader implements SubmodelReader {
                 readGeometry.get(group).add(new Face(faceVertices, faceNormal, reference.material));
             }
             
-            return new RawGeometry(readGeometry);
+            return new Geometry(readGeometry, materialMap);
         } catch (IOException e) {
             throw new SourceCompileError("Unable to read file", e.getMessage());
         }

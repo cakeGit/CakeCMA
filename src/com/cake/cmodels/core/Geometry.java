@@ -8,17 +8,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class RawGeometry implements Submodel {
+public class Geometry implements Submodel {
     
     HashMap<String, List<Face>> groupedGeometry;
     HashMap<String, ResourceLocationLike> materialMap;
     
-    //TODO: make reader include material map from source file
-    public RawGeometry(HashMap<String, List<Face>> groupedGeometry) {
-        this.groupedGeometry = groupedGeometry;
-    }
-    
-    public RawGeometry(HashMap<String, List<Face>> groupedGeometry, HashMap<String, ResourceLocationLike> materialMap) {
+    public Geometry(HashMap<String, List<Face>> groupedGeometry, HashMap<String, ResourceLocationLike> materialMap) {
         this.groupedGeometry = groupedGeometry;
         this.materialMap = materialMap;
     }
