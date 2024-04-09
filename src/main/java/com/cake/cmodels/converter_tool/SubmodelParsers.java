@@ -23,6 +23,8 @@ public class SubmodelParsers {
     }
     
     public static SubmodelReader getModelSourceProviderFor(ResourceLocationLike resourceLocation) {
+        System.out.println(MODEL_SOURCE_PROCESSORS);
+        System.out.println(resourceLocation);
         return MODEL_SOURCE_PROCESSORS.get(resourceLocation);
     }
     

@@ -38,7 +38,7 @@ public class CmodelConverter {
         }, 0, (1000 / 45));
     }
 
-    public static void beginConversion() {
+    public static void generateSelectedSources() {
     
         List<ConversionSource> sourcesToConvert = ConverterInterface.SOURCE_SELECTS
             .stream().filter(SourceSelect::isSelected).map(SourceSelect::getSource).toList();
