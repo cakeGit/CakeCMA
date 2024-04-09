@@ -78,7 +78,7 @@ public class ConversionSource {
             else
                 subpath = directory + groupName + "." + submodelReader.getDefaultExtension();
             
-            File submodelFileSource = new File(CmodelConverter.SOURCES_PATH + subpath);
+            File submodelFileSource = new File(CmodelConverter.SOURCES_PATH + File.separator + subpath);
         
             if (!submodelFileSource.exists())
                 throw new SourceCompileError("Could not find file for source in type " + submodelFileSource, "Is it spelled correctly? Is the file in the right loc?");
