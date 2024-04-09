@@ -17,6 +17,10 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class ObjModelReader implements SubmodelReader {
     
+    //TODO: Missing some specified support
+    //https://en.wikipedia.org/wiki/Wavefront_.obj_file
+    //eg: negative face indices
+    
     @Override
     public Submodel readSource(JSONObject source, File file) throws SourceCompileError {
         
@@ -97,13 +101,13 @@ public class ObjModelReader implements SubmodelReader {
     
     /**Throws a relevant source compile error if the array does not contain the index*/
     private <T> T tryGetFaceReferenceProperty(List<T> propertySource, int index, String propertyName) throws SourceCompileError {
-        if (index >= propertySource.size())
+        if ((index -1) >= propertySource.size())
             throw new SourceCompileError(
-                "Could not find matching property at the index " + index + " of type " + propertyName,
+                "Could not find matching property for " + index + " of type " + propertyName + " out of " + propertySource.size(),
                 "Check obj model formatting or report to developer"
             );
         else
-            return propertySource.get(index);
+            return propertySource.get(index -1);
     }
     
     /**Tokens that are just skipped, such as smoothing since models aren't able to account for it*/
@@ -152,7 +156,7 @@ public class ObjModelReader implements SubmodelReader {
                     );
                 List<FaceVertexReference> faceVertexReferences = new ArrayList<>();
                 for (int i = 0; i < faceVertexCount; i++) {
-                    String vertexData = fields.tryGet(0);
+                    String vertexData = fields.tryGet(i +1);
                     String[] vertexFields = vertexData.split("/");
                     
                     if (vertexFields.length != 3)
