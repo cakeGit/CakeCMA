@@ -23,7 +23,12 @@ public class SourcesReader {
         System.out.println("Searching in " + sourcesDir);
         CmodelConverter.SOURCES_PATH = sourcesDir;
 
-        readForSources("", new File(sourcesDir));
+        File sourcesFolder = new File(sourcesDir);
+        if (!sourcesFolder.isDirectory())
+            return;
+        
+        for (File file : sourcesFolder.listFiles())
+            readForSources("", file);
 
         System.out.println("Read " + CmodelConverter.AVAILABLE_SOURCES.size() + " valid sources");
         System.out.println("With " + CmodelConverter.MISREAD_SOURCES.size() + " misread sources");

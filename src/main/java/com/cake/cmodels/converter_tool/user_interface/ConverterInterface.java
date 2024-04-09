@@ -74,6 +74,8 @@ public class ConverterInterface {
         ScreenComponents.mainPanel.add(new GenerateButton(
             () -> {
                 System.out.println("Generated");
+                CmodelConverter.generateSelectedSources();
+                System.out.println("Generated");
                 JOptionPane.showMessageDialog(null, "Generated", "Success!", JOptionPane.INFORMATION_MESSAGE);
             }
         ));
