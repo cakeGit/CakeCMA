@@ -1,0 +1,11 @@
+{
+  "model_sources": [
+    {
+      "type": "ccma:obj",
+      "material_map": {
+        "polisher_wheel": "technomancy:block/polisher/polisher_wheel",
+        "polisher_wood": "technomancy:block/polisher/polisher_wood"
+      }
+    }
+  ]
+}

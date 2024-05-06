@@ -4,7 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4402b21b-4783-4a2c-a1b1-172f5b252793" name="Changes" comment="✨ Reduced narcisism 25%" />
+    <list default="true" id="4402b21b-4783-4a2c-a1b1-172f5b252793" name="Changes" comment="✨ FINALLY MADE OBJ READING 🥳🥳🥳">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/CmodelConverter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/CmodelConverter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/CmodelConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/CmodelConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton$ButtonMouseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton$ButtonMouseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/CakeModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/CmodelFileExtensions.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/CmodelFileExtensions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/model/Face.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/cake/cmodels/core/model/Face.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cobj-sources/in/testdir/wheel_test.caksource.json" beforeDir="false" afterPath="$PROJECT_DIR$/cobj-sources/in/testdir/wheel_test.ccmasource.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cobj-sources/in/testdir2/wheel_test.caksource.json" beforeDir="false" afterPath="$PROJECT_DIR$/cobj-sources/in/testdir2/wheel_test.ccmasource.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/CmodelConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/CmodelConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/ConversionLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/ConversionLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/ModelSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/ModelWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/SubmodelParsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/SubmodelParsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/ConversionSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/ConversionSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/MisreadSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/MisreadSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/SourcesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/SourcesReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/Submodel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/Submodel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/SubmodelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/SubmodelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/exception/SourceCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/exception/SourceCompileError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/exception/SourceReadError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/exception/SourceReadError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/readers/ObjModelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/readers/ObjModelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/source/readers/SafeFieldAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/source/readers/SafeFieldAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/ConverterInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/ConverterInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/ConverterLogDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/component/ConverterLogDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/FloatingFolderInfoLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/component/FloatingFolderInfoLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/GenerateButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/component/GenerateButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/MisreadSourceDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/component/MisreadSourceDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/MissingSourcesLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/component/MissingSourcesLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/SelectedSourcesLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/component/SelectedSourcesLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/component/SourceSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/component/SourceSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/CellResponsiveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/layout/CellResponsiveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/FloatingComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/layout/FloatingComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/ListLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/layout/ListLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/PanelWithFloatingLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/layout/PanelWithFloatingLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/converter_tool/user_interface/layout/ResponsiveGridLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/converter_tool/user_interface/layout/ResponsiveGridLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/CakeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/CmodelFileExtensions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/CcmaFileExtensions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/model/Face.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/FaceVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/model/FaceVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/model/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/VertexNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/model/VertexNormal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/model/VertexUV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/model/VertexUV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/types/GenericVec2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/types/GenericVec2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/types/GenericVec3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/types/GenericVec3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cake/cmodels/core/types/ResourceLocationLike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cake/ccma/core/types/ResourceLocationLike.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +191,7 @@
     <configuration name="run cake'es h gay  bitch ass   converter shitt ass program" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.cake.cmodels.converter_tool.CmodelConverter" />
+      <option name="MAIN_CLASS_NAME" value="com.cake.ccma.converter_tool.CmodelConverter" />
       <module name="CakeModel.main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cobj-sources" />
       <method v="2">
@@ -437,7 +495,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712753828535</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="✨ Reduced narcisism 25%">
+      <created>1712823491077</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1712823491077</updated>
+    </task>
+    <task id="LOCAL-00037" summary="✨ FINALLY MADE OBJ READING 🥳🥳🥳">
+      <created>1712823541521</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1712823541521</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,8 +529,6 @@
       <path value="$PROJECT_DIR$/../.." />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="✨ Created core components, mainly for reading" />
-    <MESSAGE value="✨ Build files" />
     <MESSAGE value="Added json lib" />
     <MESSAGE value=" Created new testing assets" />
     <MESSAGE value="✨Core structure" />
@@ -482,7 +552,9 @@
     <MESSAGE value="✨ Ignore gradle" />
     <MESSAGE value="✨ Successful building!" />
     <MESSAGE value="✨ Reduced narcisism 25%" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Reduced narcisism 25%" />
+    <MESSAGE value="✨ FINALLY MADE OBJ READING " />
+    <MESSAGE value="✨ FINALLY MADE OBJ READING " />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ FINALLY MADE OBJ READING " />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
